@@ -21,7 +21,10 @@ numbers	result
 
 def solution(numbers):
     answer = 0
+    #제한의 9까지의 수 순차 대입
     for i in range(10):
+        #numbers에 속한 수가 아닌 경우
         if i not in numbers:
+            #answer에 헤당 값 더한다
             answer += i
     return answer
